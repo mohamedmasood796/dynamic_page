@@ -8,7 +8,8 @@ router.get('/', function(req, res, next) {
   if( req.session.loggedIn ) {
     res.redirect( "/home" );
   } else {
-    res.render( 'login' );
+    res.render( 'login',{"loginErr":req.session.loginErr} );
+    req.session.loginErr=false;
   }
 });
 

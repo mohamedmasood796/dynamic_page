@@ -32,6 +32,7 @@ router.post('/', function(req, res, next) {
     req.session.home= req.body;
     res.render('home', { products });
   } else {
+    req.session.loginErr=true;
     res.redirect( "/" );
   }
   
