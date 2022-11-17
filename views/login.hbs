@@ -1,16 +1,7 @@
 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<body style="background-image: url( )">
     <div class="row">
-    <div class="col-md-6 m-auto">
+    <div class="col-md-6 m-auto " >
         <div class="container mt-5 pl-5">
             
             <h2 class="text-center">Login</h2>
@@ -19,18 +10,17 @@
                     <label for="">Email Address</label>
                     <input type="email" class="form-control" name="Email" placeholder="Enter email">
                 </div>
-                <div class="form-group">
+                <div class="form-group mt-3 mb-3">
                     <label for="">password</label>
                     <input type="password" class="form-control" name="password" placeholder="password">
                 </div>
                 {{#if loginErr}}
-                <p class="error">invalid email or password</p>
+                <p class="error " style="color: red;">invalid email or password</p>
                  {{/if}}
-                <a href="">forget password</a>
+                <a href="" >forget password</a>
                 <button type="submit" class="btn btn-primary float-right">Login</button>
             </form>
         </div>
     </div>
 </div>
 </body>
-</html>
